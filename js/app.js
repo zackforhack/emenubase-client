@@ -4,28 +4,28 @@
         $locationProvider.html5Mode(true);
         $routeProvider
             .when("/services", {
-                templateUrl: "democlient/partials/services.html",
+                templateUrl: "emenubase-client/partials/services.html",
                 controller: 'DemoCtrl'
             })
             .when("/categories", {
-                templateUrl: "democlient/partials/categories.html",
+                templateUrl: "emenubase-client/partials/categories.html",
                 controller: 'DemoCtrl'
             })
             .when("/items", {
-                templateUrl: "democlient/partials/items.html",
+                templateUrl: "emenubase-client/partials/items.html",
                 controller: 'DemoCtrl'
             })
             .when("/buzz", {
-                templateUrl: "democlient/partials/buzz.html",
+                templateUrl: "emenubase-client/partials/buzz.html",
                 controller: 'BuzzCtrl'
             })
             // .when("/reservation", {
-            //     templateUrl: "democlient/partials/reservation.html",
+            //     templateUrl: "emenubase-client/partials/reservation.html",
             //     controller: 'ResCtrl'
             // })
 
             .when("/about", {
-                templateUrl: "democlient/partials/about.html",
+                templateUrl: "emenubase-client/partials/about.html",
                 controller: 'DemoCtrl'
             })
 
