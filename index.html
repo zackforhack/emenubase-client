@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html ng-app="mobileCloneDemo">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/main.css" type="text/css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/push-component.css" type="text/css"/>
+    <link rel="stylesheet" href="css/animate.css" type="text/css"/>
+    <link rel="stylesheet" href="css/datetimepicker.css" type="text/css"/>
+    <link rel="stylesheet" href="bower_components/angular-snap/angular-snap.css">
+
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="js/src/moment.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-snap/angular-snap.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="bower_components/snapjs/snap.js"></script>
+    <script src="js/src/module.js"></script>
+    <script src="js/src/services/pages.js"></script>
+    <script src="js/src/services/transitions.js"></script>
+    <script src="js/src/directives/page.js"></script>
+    <script src='https://cdn.firebase.com/v0/firebase.js'></script>
+    <script src='https://cdn.firebase.com/libs/angularfire/0.6.0/angularfire.min.js'></script>
+    <script src="js/src/directives/datetimepicker.js"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://checkout.stripe.com/checkout.js"></script>
+    <script>
+            isMobile = false;
+        var href = window.location.href;
+        if (href.indexOf('file') != -1) {
+            isMobile = true;
+            document.write("<script type='text/javascript' src='cordova.js'><\/script>");
+        }
+    </script>
+    <script src="js/app.js"></script>
+    <title>G for Gelato</title>
+</head>
+<body>
+  <div snap-drawer="right" class="menu menu-vertical menu-right" id="menu-s2" style="border-left: 1px solid #ddd" ng-controller="OrderCtrl">
+    <h3>My Plate</h3>
+    <div class="order-container col-xs-12">
+        <ul>
+            <li class="text-center" ng-show="!myPlate.length">Aww my plate is currently empty, better go grab some food!</li>
+            <li class="order-item" ng-repeat="order in myPlate">
+              <button type="button" class="close pull-left" aria-hidden="true" ng-click="removeFromPlate(this.order, myPlate)">&times;</button>
+              <div class="order-title"><span>{{order.title}}</span> <small>({{order.category}})</small></div>
+              <span class="money pull-right">${{order.price | number : 2}}</span>
+            </li>
+        </ul>
+        <div class="order-total top-10">
+          <div>Total: <span class="money pull-right">${{myTotal | number : 2}}</span></div>
+          <div class="order-input-block">Sign your table number here:</div>
+          <input class="order-input" type="number" ng-model="tableNum">
+        </div>
+        <div class="order-button-block"><button class="btn btn-place-order" ng-click="order()" ng-disabled="canOrder()">Order</button></div>
+        <div class="order-confirm-block text-center" ng-if="myPlacedOrder">
+          <div class="order-confirm-block-wait" ng-if="!myPlacedOrder.confirmed">
+            Please wait while we confirm your order...
+            <div class="loader">
+              <div class="dot dot1"></div>
+              <div class="dot dot2"></div>
+              <div class="dot dot3"></div>
+              <div class="dot dot4"></div>
+            </div>
+          </div>
+          <div class="order-confirm-block-done" ng-if="myPlacedOrder.confirmed">
+            <div>Your order has been recieved and will come soon!</div>
+            <div class="top-20">In the meantime, would you like to <a href="" ng-click="$parent.orderMore()">order more</a>?</div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div snap-content>
+    <mc-view></mc-view>
+  </div>
+</body>
+</html>
