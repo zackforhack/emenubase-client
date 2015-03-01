@@ -15,8 +15,8 @@
                 templateUrl: "emenubase-client/partials/items.html",
                 controller: 'DemoCtrl'
             })
-            .when("/callus", {
-                templateUrl: "emenubase-client/partials/callus.html",
+            .when("/onetouchcall", {
+                templateUrl: "emenubase-client/partials/onetouchcall.html",
                 controller: 'BuzzCtrl'
             })
             // .when("/reservation", {
@@ -67,7 +67,7 @@
 
         $scope.chooseCallus = function() {
             //$rootScope.serviceChoice = service.name;
-            $pages.next('callus');
+            $pages.next('onetouchcall');
         };
 
         $scope.chooseReservation = function() {
