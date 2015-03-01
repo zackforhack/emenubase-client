@@ -19,10 +19,10 @@
                 templateUrl: "democlient/partials/buzz.html",
                 controller: 'BuzzCtrl'
             })
-            .when("/reservation", {
-                templateUrl: "democlient/partials/reservation.html",
-                controller: 'ResCtrl'
-            })
+            // .when("/reservation", {
+            //     templateUrl: "democlient/partials/reservation.html",
+            //     controller: 'ResCtrl'
+            // })
 
             .when("/about", {
                 templateUrl: "democlient/partials/about.html",
@@ -171,44 +171,45 @@
 
     })
 
-        .controller('ResCtrl', function ($scope, $firebase, $rootScope, $animate){
-        var reservations = new Firebase('https://gforgelato.firebaseio.com/Reservations');
-        $scope.reservations = $firebase(reservations);
+    //     .controller('ResCtrl', function ($scope, $firebase, $rootScope, $animate){
+    //     var reservations = new Firebase('https://gforgelato.firebaseio.com/Reservations');
+    //     $scope.reservations = $firebase(reservations);
 
   
-        $scope.canRes = function(){
-            if (!$scope.buzzTableNum)
-                return true;
-        };
+    //     $scope.canRes = function(){
+    //         if (!$scope.buzzTableNum)
+    //             return true;
+    //     };
 
-          $rootScope.firstName= {
-        data : null
-        } ;
-          $rootScope.lastName= {
-        data : null
-        } ;
-          $rootScope.teleNum= {
-        data : null
-        } ;
-          $rootScope.data= {
-        dateDropDownInput : null
-        } ;   
+    //       $rootScope.firstName= {
+    //     data : null
+    //     } ;
+    //       $rootScope.lastName= {
+    //     data : null
+    //     } ;
+    //       $rootScope.teleNum= {
+    //     data : null
+    //     } ;
+    //       $rootScope.data= {
+    //     dateDropDownInput : null
+    //     } ;   
 
-            $scope.res = function(){
+    //         $scope.res = function(){
             
-            var myRes = {
-                'firstName': $rootScope.firstName.data,
-                'lastName': $rootScope.lastName.data,
-                'telePhone': $rootScope.teleNum.data,
-                'time': $rootScope.data,
-                'confirmed': false
-            };
-            $scope.reservations.$add(angular.fromJson(angular.toJson(myRes))).then(function(ref) {
-                var myPlacedRes = new Firebase('https://gforgelato.firebaseio.com/Reservations/'+ref.name());
-                $scope.myPlacedRes = $firebase(myPlacedRes);
-            });
+    //         var myRes = {
+    //             'firstName': $rootScope.firstName.data,
+    //             'lastName': $rootScope.lastName.data,
+    //             'telePhone': $rootScope.teleNum.data,
+    //             'time': $rootScope.data,
+    //             'confirmed': false
+    //         };
+    //         $scope.reservations.$add(angular.fromJson(angular.toJson(myRes))).then(function(ref) {
+    //             var myPlacedRes = new Firebase('https://gforgelato.firebaseio.com/Reservations/'+ref.name());
+    //             $scope.myPlacedRes = $firebase(myPlacedRes);
+    //         });
   
-        };
+    //     };
 
 
-    });
+    // })
+    ;
