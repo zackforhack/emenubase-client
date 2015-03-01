@@ -65,9 +65,9 @@
             $pages.next('categories');
         };
 
-        $scope.chooseBuzz = function() {
+        $scope.chooseCallus = function() {
             //$rootScope.serviceChoice = service.name;
-            $pages.next('buzz');
+            $pages.next('callus');
         };
 
         $scope.chooseReservation = function() {
