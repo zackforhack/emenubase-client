@@ -15,8 +15,8 @@
                 templateUrl: "emenubase-client/partials/items.html",
                 controller: 'DemoCtrl'
             })
-            .when("/buzz", {
-                templateUrl: "emenubase-client/partials/buzz.html",
+            .when("/callus", {
+                templateUrl: "emenubase-client/partials/callus.html",
                 controller: 'BuzzCtrl'
             })
             // .when("/reservation", {
