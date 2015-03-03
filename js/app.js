@@ -105,7 +105,7 @@
             arr.splice(arr.indexOf(obj), 1);
         };
         $scope.canOrder = function(){
-            if (!$rootScope.myPlate.length || !$scope.tableNum)
+            if (!$rootScope.myPlate.length || !$scope.telNum)
                 return true;
         };
 
@@ -119,7 +119,7 @@
         $scope.order = function(){
             $scope.canSkipConfirm = false;
             var myOrder = {
-                'table': $scope.tableNum,
+                'tel': $scope.telNum,
                 'order': $rootScope.myPlate,
                 'total': $scope.myTotal,
                 'confirmed': false
