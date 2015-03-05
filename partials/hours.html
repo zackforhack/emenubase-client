@@ -3,6 +3,7 @@
     	<mc-nav position="left" back="true" change-to="about">About</mc-nav>
     </header>
     <mc-content>
+    <div ng-repeat="(key,profile) in about">
 		<table class="table table-striped">
             <thead>
                 <tr>
@@ -15,8 +16,8 @@
             <tbody>
                 <tr>
                     <td>Monday</td>
-                    <td>{{about.Monday.Hours.from}}</td>
-                    <td>{{about.Monday.Hours.to}}</td>
+                    <td>{{profile.Monday.Hours.from}}</td>
+                    <td>{{profile.Monday.Hours.to}}</td>
                 </tr>
             </tbody>
         </table>
