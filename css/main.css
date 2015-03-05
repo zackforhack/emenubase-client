@@ -8926,7 +8926,7 @@ em {
   margin-top: 15px;
 }
 .order-input{
-  border-bottom: 1px dotted #b63923;
+  border: 1px #b63923;
   padding: 1px;
   margin-top: 4px;
   text-align: center;
