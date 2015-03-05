@@ -203,21 +203,21 @@
 
     })
 
-        .controller('CompanyinfoCtrl', function ($scope, $firebase, $rootScope, $animate){
+        .controller('CompanyinfoCtrl', function ($scope, $firebase){
         var about = new Firebase('https://gforgelato.firebaseio.com/About');
         $scope.about = $firebase(about);
 
 
     })
 
-        .controller('HoursCtrl', function ($scope, $firebase, $rootScope, $animate){
+        .controller('HoursCtrl', function ($scope, $firebase){
         var about = new Firebase('https://gforgelato.firebaseio.com/About');
         $scope.about = $firebase(about);
 
 
     })
 
-        .controller('FoodqualityCtrl', function ($scope, $firebase, $rootScope, $animate){
+        .controller('FoodqualityCtrl', function ($scope, $firebase){
         var about = new Firebase('https://gforgelato.firebaseio.com/About');
         $scope.about = $firebase(about);
 
