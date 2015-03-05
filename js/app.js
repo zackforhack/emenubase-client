@@ -204,21 +204,21 @@
     })
 
         .controller('CompanyinfoCtrl', function ($scope, $firebase, $rootScope, $animate){
-        var about = new Firebase('https://gforgelato.firebaseio.com/about');
+        var about = new Firebase('https://gforgelato.firebaseio.com/About');
         $scope.about = $firebase(about);
 
 
     })
 
         .controller('HoursCtrl', function ($scope, $firebase, $rootScope, $animate){
-        var about = new Firebase('https://gforgelato.firebaseio.com/about');
+        var about = new Firebase('https://gforgelato.firebaseio.com/About');
         $scope.about = $firebase(about);
 
 
     })
 
         .controller('FoodqualityCtrl', function ($scope, $firebase, $rootScope, $animate){
-        var about = new Firebase('https://gforgelato.firebaseio.com/about');
+        var about = new Firebase('https://gforgelato.firebaseio.com/About');
         $scope.about = $firebase(about);
 
 
