@@ -3,14 +3,22 @@
     	<mc-nav position="left" back="true" change-to="about">About</mc-nav>
     </header>
     <mc-content>
-		<div class="container categories-page">
-			<div class="category-container">
-				<div ng-click="">
-					<div back-img="emenubase-client/img/Hours.jpg" class="background-image">
-						<div class="category-name">Hours</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		<table class="table table-striped">
+            <thead>
+                <tr>
+                <th>Day</th>
+                <th>From</th>
+                <th>To</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>{{about.Monday.Hours.from}}</td>
+                    <td>{{about.Monday.Hours.to}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
     </mc-content>
 </mc-page>
