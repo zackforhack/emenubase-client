@@ -3,14 +3,11 @@
     	<mc-nav position="left" back="true" change-to="about">About</mc-nav>
     </header>
     <mc-content>
-		<div class="container categories-page">
-			<div class="category-container">
-				<div ng-click="">
-					<div back-img="emenubase-client/img/Foodquality.jpg" class="background-image">
-						<div class="category-name">Food Quality</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		<div ng-repeat="(key,profile) in about" class="col-xs-8 col-xs-offset-2">
+		<div class="category-container">
+				{{profile.Foodquality}}
+
+        </div>
+    	</div>
     </mc-content>
 </mc-page>

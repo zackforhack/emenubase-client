@@ -4,11 +4,54 @@
     </header>
     <mc-content>
     <div ng-repeat="(key,profile) in about" class="col-xs-8 col-xs-offset-2">
-        <div ng-repeat="(key,profile) in about" class="col-xs-8 col-xs-offset-2">
-        <div class="category-container">
-                {{profile.Foodquality}}
-
+		<div class="category-container">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                <th>Day</th>
+                <th>From</th>
+                <th>To</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>{{profile.Hours.Monday.from}}</td>
+                    <td>{{profile.Hours.Monday.to}}</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>{{profile.Hours.Tuesday.from}}</td>
+                    <td>{{profile.Hours.Tuesday.to}}</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>{{profile.Hours.Wednesday.from}}</td>
+                    <td>{{profile.Hours.Wednesday.to}}</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>{{profile.Hours.Thursday.from}}</td>
+                    <td>{{profile.Hours.Thursday.to}}</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>{{profile.Hours.Friday.from}}</td>
+                    <td>{{profile.Hours.Friday.to}}</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>{{profile.Hours.Saturday.from}}</td>
+                    <td>{{profile.Hours.Saturday.to}}</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>{{profile.Hours.Sunday.from}}</td>
+                    <td>{{profile.Hours.Sunday.to}}</td>
+                </tr>
+            </tbody>
+        </table>
         </div>
-        </div>
+    </div>
     </mc-content>
 </mc-page>
