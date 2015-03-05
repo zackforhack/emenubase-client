@@ -5,20 +5,25 @@
     <mc-content>
 		<div class="container categories-page">
 			<div class="category-container">
-						<span>{{about.Name}}</span></br>
-						</br>
-						<span>Address: {{about.Address}}</span></br>
-						</br>
-						<span>Telephone: {{about.Telephone}}</span></br>
-						</br>
-						<span>Hours:</span></br>
-						<span>Monday: {{about.Hours.Monday}}</span></br>
-						<span>Tuesday: {{about.Hours.Tuesday}}</span></br>
-						<span>Wednesday: {{about.Hours.Wednesday}}</span></br>
-						<span>Thursday: {{about.Hours.Thursday}}</span></br>
-						<span>Friday: {{about.Hours.Friday}}</span></br>
-						<span>Saturday: {{about.Hours.Saturday}}</span></br>
-						<span>Saunday: {{about.Hours.Sunday}}</span></br>
+				<div ng-click="chooseMenu()">
+					<div back-img="emenubase-client/img/Companyinfo.jpg" class="background-image">
+						<div class="category-name">Company Info</div>
+					</div>
+				</div>
+			</div>
+			<div class="category-container">
+				<div ng-click="chooseAbout()">
+					<div back-img="emenubase-client/img/Hours.jpg" class="background-image">
+						<div class="category-name">Hours</div>
+					</div>
+				</div>
+			</div>
+			<div class="category-container">
+				<a href="tel:1-408-555-5555">
+					<div back-img="emenubase-client/img/Foodquality.jpg" class="background-image" >
+						<div class="category-name">Food Quality</div>
+					</div>
+				</a>
 			</div>
 		</div>
     </mc-content>
