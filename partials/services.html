@@ -3,7 +3,7 @@
     
     </header>
     <mc-content>
-		<div class="container categories-page">
+		<div class="container categories-page" ng-repeat="(key,profile) in about">
 			<div class="category-container">
 				<div ng-click="chooseMenu()">
 					<div back-img="emenubase-client/img/Menu.jpg" class="background-image">
@@ -19,9 +19,9 @@
 				</div>
 			</div>
 			<div class="category-container">
-				<a href="tel:1-408-555-5555">
+				<a href="tel:{{profile.Telephone}}">
 					<div back-img="emenubase-client/img/Buzz.jpg" class="background-image" >
-						<div class="category-name">One Touch Call</div>
+						<div class="category-name">One Touch Call tel:{{profile.Telephone}}</div>
 					</div>
 				</a>
 			</div>

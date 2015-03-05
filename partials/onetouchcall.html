@@ -3,12 +3,12 @@
     	<mc-nav position="left" back="true" change-to="services">Home</mc-nav>
     </header>
     <mc-content>
-		<div class="container categories-page">
+		<div class="container categories-page" ng-repeat="(key,profile) in about">
 			<div class="category-container">
 				<div>
 					<div back-img="emenubase-client/img/Buzz.jpg" class="background-image">
 						<div class="category-name">One Touch Call</div>
-						<button class="btn btn-success btn-sm pull-right" ><a href="tel:1-408-555-5555">Press to Call</a></button>
+						<button class="btn btn-success btn-sm pull-right" ><a href="tel:{{profile.Telephone}}">Press to Call</a></button>
 					</div>
 				</div>
 			</div>

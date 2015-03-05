@@ -17,7 +17,7 @@
             })
             .when("/onetouchcall", {
                 templateUrl: "emenubase-client/partials/onetouchcall.html",
-                controller: 'BuzzCtrl'
+                controller: 'DemoCtrl'
             })
 
             .when("/companyinfo", {
