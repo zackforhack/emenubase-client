@@ -22,7 +22,7 @@
 
             .when("/companyinfo", {
                 templateUrl: "emenubase-client/partials/companyinfo.html",
-                controller: 'CompanyinfoCtrl'
+                controller: 'DemoCtrl'
             })
 
             .when("/hours", {
@@ -32,7 +32,7 @@
 
             .when("/foodquality", {
                 templateUrl: "emenubase-client/partials/foodquality.html",
-                controller: 'FoodqualityCtrl'
+                controller: 'DemoCtrl'
             })
             // .when("/reservation", {
             //     templateUrl: "emenubase-client/partials/reservation.html",
