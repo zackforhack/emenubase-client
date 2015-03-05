@@ -8913,7 +8913,7 @@ em {
 .order-container .order-total{
   background-image: url(../img/Reciept.svg);
   background-size: contain;
-  height: 65px;
+  height: 130px;
   padding: 10px 25px;
   background-repeat: no-repeat;
 }
