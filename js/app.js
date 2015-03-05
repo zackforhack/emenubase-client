@@ -105,7 +105,7 @@
             arr.splice(arr.indexOf(obj), 1);
         };
         $scope.canOrder = function(){
-            if (!$rootScope.myPlate.length || !$scope.telNum)
+            if (!$rootScope.myPlate.length || !$scope.telNum || !$scope.clientNname || !$scope.clientAddress)
                 return true;
         };
 
@@ -120,6 +120,8 @@
             $scope.canSkipConfirm = false;
             var myOrder = {
                 'tel': $scope.telNum,
+                'clientname': $scope.clientNname,
+                'clientaddress': $scope.clientAddress,
                 'order': $rootScope.myPlate,
                 'total': $scope.myTotal,
                 'confirmed': false

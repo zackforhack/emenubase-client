@@ -61,9 +61,9 @@
           <div class="order-input-block">Type Your Name here: </div>
           <input class="order-input" type="tel" ng-model="clientNname">
           <div class="order-input-block">Type Your Cellphone Number here: </div>
-          <input class="order-input" type="tel" ng-model="telNum">
+          <input class="order-input" type="text" ng-model="telNum">
           <div class="order-input-block">Type Your Address here: </div>
-          <input class="order-input" type="tel" ng-model="clientAddress">
+          <input class="order-input" type="text" ng-model="clientAddress">
         </div>
         <div class="order-button-block"><button class="btn btn-place-order" ng-click="order()" ng-disabled="canOrder()">Order</button></div>
         <div class="order-confirm-block text-center" ng-if="myPlacedOrder">
