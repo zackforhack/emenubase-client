@@ -5126,7 +5126,6 @@ button.close {
   outline: none;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
           box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
-          height: 80%;
 }
 .modal-backdrop {
   position: fixed;
@@ -5160,8 +5159,6 @@ button.close {
 .modal-body {
   position: relative;
   padding: 20px;
-  max-height: calc(100% - 120px);
-  overflow-y: scroll;
 }
 .modal-footer {
   padding: 19px 20px 20px;
