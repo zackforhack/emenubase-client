@@ -49,9 +49,13 @@
             });
     })
     .controller('DemoCtrl', function ($scope, $pages, $rootScope, $firebase, $location) {
-        var menu = new Firebase('https://gforgelato.firebaseio.com/MenuItems');
-        var categories = new Firebase('https://gforgelato.firebaseio.com/Category');
         var about = new Firebase('https://gforgelato.firebaseio.com/About')
+        $scope.about = $firebase(about);
+        
+        var categories = new Firebase('https://gforgelato.firebaseio.com/Category');
+        $scope.categories = $firebase(categories);
+        
+        var menu = new Firebase('https://gforgelato.firebaseio.com/MenuItems');
         menu.on('value', function(dataSnapshot) {
             $scope.menuItems = dataSnapshot.val();
           });
@@ -64,7 +68,7 @@
         })();
 
         $scope.categories = $firebase(categories);
-        $scope.about = $firebase(about);
+
         
         $scope.chooseCategory = function(categ) {
             $rootScope.categoryChoice = categ.name;
