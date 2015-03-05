@@ -4,16 +4,18 @@
         <button class="right-nav"><i id="showRightPush" snap-toggle="right" class="icon-empty-bowl1" ng-class="{'icon-icon_17163':myPlate.length, 'icon-bowl-full-test':myPlate.length >= 3}"><span id="notification" class="notification" ng-if="myPlate.length">{{myPlate.length}}</span></i></button>
     </header>
     <mc-content>
-    	<a href=>
+    	
 		<div class="container categories-page">
 			<div class="category-container" ng-repeat="categ in categories">
+				<a href=>
 				<div ng-click="chooseCategory(this.categ)">
 					<div back-img="data:{{this.categ.image.filetype}};base64,{{this.categ.image.base64}}" class="background-image">
 						<div class="category-name">{{categ.name}}</div>
 					</div>
 				</div>
+				</a>
 			</div>
 		</div>
-		</a>
+		
     </mc-content>
 </mc-page>
