@@ -19,6 +19,11 @@
                 templateUrl: "emenubase-client/partials/onetouchcall.html",
                 controller: 'BuzzCtrl'
             })
+
+            .when("/companyinfo", {
+                templateUrl: "emenubase-client/partials/companyinfo.html",
+                controller: 'CompanyinfoCtrl'
+            })
             // .when("/reservation", {
             //     templateUrl: "emenubase-client/partials/reservation.html",
             //     controller: 'ResCtrl'
@@ -70,6 +75,11 @@
             $pages.next('onetouchcall');
         };
 
+        $scope.chooseCompanyinfo = function() {
+            //$rootScope.serviceChoice = service.name;
+            $pages.next('companyinfo');
+        };
+
         $scope.chooseReservation = function() {
             //$rootScope.serviceChoice = service.name;
             $pages.next('reservation');
@@ -119,7 +129,7 @@
         $scope.order = function(){
             $scope.canSkipConfirm = false;
             var myOrder = {
-                'tel': $scope.telNum,
+                'Address': $scope.telNum,
                 'clientname': $scope.clientNname,
                 'clientaddress': $scope.clientAddress,
                 'order': $rootScope.myPlate,
@@ -170,6 +180,13 @@
             });
 
         };
+
+    })
+
+        .controller('BuzzCtrl', function ($scope, $firebase, $rootScope, $animate){
+        var about = new Firebase('https://gforgelato.firebaseio.com/about');
+        $scope.about = $firebase(about);
+
 
     })
 
