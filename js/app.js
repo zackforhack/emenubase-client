@@ -129,7 +129,7 @@
         $scope.order = function(){
             $scope.canSkipConfirm = false;
             var myOrder = {
-                'Address': $scope.telNum,
+                'tel': $scope.telNum,
                 'clientname': $scope.clientNname,
                 'clientaddress': $scope.clientAddress,
                 'order': $rootScope.myPlate,
