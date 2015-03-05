@@ -24,6 +24,11 @@
                 templateUrl: "emenubase-client/partials/companyinfo.html",
                 controller: 'CompanyinfoCtrl'
             })
+
+            .when("/hours", {
+                templateUrl: "emenubase-client/partials/hours.html",
+                controller: 'HoursCtrl'
+            })
             // .when("/reservation", {
             //     templateUrl: "emenubase-client/partials/reservation.html",
             //     controller: 'ResCtrl'
@@ -78,6 +83,11 @@
         $scope.chooseCompanyinfo = function() {
             //$rootScope.serviceChoice = service.name;
             $pages.next('companyinfo');
+        };
+
+        $scope.chooseHours = function() {
+            //$rootScope.serviceChoice = service.name;
+            $pages.next('hours');
         };
 
         $scope.chooseReservation = function() {
@@ -184,6 +194,13 @@
     })
 
         .controller('CompanyinfoCtrl', function ($scope, $firebase, $rootScope, $animate){
+        var about = new Firebase('https://gforgelato.firebaseio.com/about');
+        $scope.about = $firebase(about);
+
+
+    })
+
+        .controller('HoursCtrl', function ($scope, $firebase, $rootScope, $animate){
         var about = new Firebase('https://gforgelato.firebaseio.com/about');
         $scope.about = $firebase(about);
 
