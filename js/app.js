@@ -29,6 +29,11 @@
                 templateUrl: "emenubase-client/partials/hours.html",
                 controller: 'HoursCtrl'
             })
+
+            .when("/foodquality", {
+                templateUrl: "emenubase-client/partials/foodquality.html",
+                controller: 'FoodqualityCtrl'
+            })
             // .when("/reservation", {
             //     templateUrl: "emenubase-client/partials/reservation.html",
             //     controller: 'ResCtrl'
@@ -88,6 +93,11 @@
         $scope.chooseHours = function() {
             //$rootScope.serviceChoice = service.name;
             $pages.next('hours');
+        };
+
+        $scope.chooseFoodquality = function() {
+            //$rootScope.serviceChoice = service.name;
+            $pages.next('foodquality');
         };
 
         $scope.chooseReservation = function() {
@@ -201,6 +211,13 @@
     })
 
         .controller('HoursCtrl', function ($scope, $firebase, $rootScope, $animate){
+        var about = new Firebase('https://gforgelato.firebaseio.com/about');
+        $scope.about = $firebase(about);
+
+
+    })
+
+        .controller('FoodqualityCtrl', function ($scope, $firebase, $rootScope, $animate){
         var about = new Firebase('https://gforgelato.firebaseio.com/about');
         $scope.about = $firebase(about);
 
