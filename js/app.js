@@ -183,7 +183,7 @@
 
     })
 
-        .controller('BuzzCtrl', function ($scope, $firebase, $rootScope, $animate){
+        .controller('CompanyinfoCtrl', function ($scope, $firebase, $rootScope, $animate){
         var about = new Firebase('https://gforgelato.firebaseio.com/about');
         $scope.about = $firebase(about);
 
