@@ -27,7 +27,7 @@
 
             .when("/hours", {
                 templateUrl: "emenubase-client/partials/hours.html",
-                controller: 'HoursCtrl'
+                controller: 'DemoCtrl'
             })
 
             .when("/foodquality", {
