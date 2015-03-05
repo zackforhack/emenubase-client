@@ -3,8 +3,9 @@
     	<mc-nav position="left" back="true" change-to="about">About</mc-nav>
     </header>
     <mc-content>
-    <div style="max-width=730px;" ng-repeat="(key,profile) in about">
-		<table class="table table-striped">
+    <div ng-repeat="(key,profile) in about">
+		<div class="category-container">
+        <table class="table table-striped">
             <thead>
                 <tr>
                 <th>Day</th>
@@ -50,6 +51,7 @@
                 </tr>
             </tbody>
         </table>
+    </div>
     </div>
     </mc-content>
 </mc-page>
