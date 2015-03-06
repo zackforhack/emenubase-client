@@ -5,7 +5,10 @@
     <mc-content>
 		<div ng-repeat="(key,profile) in about" class="col-xs-8 col-xs-offset-2">
 		<div class="category-container">
-				{{profile.Companyinfo}}
+                <label> Restaurant Name : {{profile.Name}}</label>
+                <label> Restaurant Address : {{profile.Address}}</label>
+                <label> Restaurant Telephone : {{profile.Telephone}}</label>
+				<p>{{profile.Companyinfo}}</p>
         </div>
     	</div>
     </mc-content>
