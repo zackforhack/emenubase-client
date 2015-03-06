@@ -4,34 +4,34 @@
         $locationProvider.html5Mode(true);
         $routeProvider
             .when("/services", {
-                templateUrl: "zackforhack.github.io/emenubase-client/partials/services.html",
+                templateUrl: "emenubase-client/partials/services.html",
                 controller: 'DemoCtrl'
             })
             .when("/categories", {
-                templateUrl: "zackforhack.github.io/emenubase-client/partials/categories.html",
+                templateUrl: "emenubase-client/partials/categories.html",
                 controller: 'DemoCtrl'
             })
             .when("/items", {
-                templateUrl: "zackforhack.github.io/emenubase-client/partials/items.html",
+                templateUrl: "emenubase-client/partials/items.html",
                 controller: 'DemoCtrl'
             })
             .when("/onetouchcall", {
-                templateUrl: "zackforhack.github.io/emenubase-client/partials/onetouchcall.html",
+                templateUrl: "emenubase-client/partials/onetouchcall.html",
                 controller: 'DemoCtrl'
             })
 
             .when("/companyinfo", {
-                templateUrl: "zackforhack.github.io/emenubase-client/partials/companyinfo.html",
+                templateUrl: "emenubase-client/partials/companyinfo.html",
                 controller: 'DemoCtrl'
             })
 
             .when("/hours", {
-                templateUrl: "zackforhack.github.io/emenubase-client/partials/hours.html",
+                templateUrl: "emenubase-client/partials/hours.html",
                 controller: 'DemoCtrl'
             })
 
             .when("/foodquality", {
-                templateUrl: "zackforhack.github.io/emenubase-client/partials/foodquality.html",
+                templateUrl: "emenubase-client/partials/foodquality.html",
                 controller: 'DemoCtrl'
             })
             // .when("/reservation", {
