@@ -6335,10 +6335,9 @@ button.strap .close {
   position: relative;
   height: 60%;
   padding: 20px;
-  max-height: 350px; 
-    padding: 15px; 
-    overflow-y: auto; 
-    -webkit-overflow-scrolling: touch;
+  max-height: 550px; 
+  padding: 15px; 
+
 }
 
 .strap .modal-footer {
