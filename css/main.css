@@ -6254,10 +6254,12 @@ button.strap .close {
 
 .strap .modal {
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 3%;
+  right: 3%;
   bottom: 0;
-  left: 0;
+  left: 3%;
+  width: auto;
+  margin: 0;
   z-index: 1040;
   display: none;
   overflow: auto;
@@ -6331,7 +6333,12 @@ button.strap .close {
 
 .strap .modal-body {
   position: relative;
+  height: 60%;
   padding: 20px;
+  max-height: 350px; 
+    padding: 15px; 
+    overflow-y: auto; 
+    -webkit-overflow-scrolling: touch;
 }
 
 .strap .modal-footer {
