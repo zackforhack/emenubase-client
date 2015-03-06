@@ -9,8 +9,8 @@
 				<div class="panel-body">
 					<div class="panel-body-inner">
 						<div class="panel-body-title">{{item.title}}</div>
-						<a href="#" class="panel-body-title col-xs-4"><img ng-src="data:{{item.image.filetype}};base64,{{item.image.base64}}" width="100" height="150" float:"left" ng-click="saveItem(this.item)" data-toggle="modal" data-target="#myModal" href="#"></a>
-                        <a href="#" class="panel-body-title col-xs-4"><img ng-src="data:{{item.image2.filetype}};base64,{{item.image2.base64}}" width="100" height="150" float:"left" ng-click="saveItem(this.item)" data-toggle="modal" data-target="#myModal" href="#"></a>
+						<a href="#" class="panel-body-title col-xs-4"><img ng-src="data:{{item.image.filetype}};base64,{{item.image.base64}}" width="100" height="100" float:"left" ng-click="saveItem(this.item)" data-toggle="modal" data-target="#myModal" href="#"></a>
+                        <a href="#" class="panel-body-title col-xs-4"><img ng-src="data:{{item.image2.filetype}};base64,{{item.image2.base64}}" width="100" height="100" float:"left" ng-click="saveItem(this.item)" data-toggle="modal" data-target="#myModal" href="#"></a>
 						<span class="panel-body-description col-xs-4">{{item.description}}<br><br><small>Price - ${{item.price | number : 2}}</small></span>
 					</div>
 					<a class="panel-add-button" href="" ng-click="addToPlate(this.item)"><i class="fa fa-plus"></i></a>
