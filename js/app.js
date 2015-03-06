@@ -118,6 +118,11 @@
         $scope.defaultItem = item;
       }; 
 
+        $scope.saveItem = function(item){
+        $scope.defaultItem = item;
+        $scope.defaultItem.image = item.image2;
+      }; 
+
     })
     .controller('OrderCtrl', function ($scope, $firebase, $rootScope, $animate){
         var orders = new Firebase('https://gforgelato.firebaseio.com/Orders');
