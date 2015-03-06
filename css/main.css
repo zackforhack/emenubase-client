@@ -6277,7 +6277,7 @@ button.strap .close {
 }
 
 .strap .modal-dialog {
-  position: relative;
+  position: absolute;
   z-index: 1050;
   width: auto;
   margin: 10px;
