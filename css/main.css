@@ -6407,7 +6407,7 @@ button.strap .close {
 @media screen and (min-width: 768px) {
   .strap .modal-dialog {
     width: 600px;
-    margin: 30px;
+    margin: 60px auto;
   }
   .strap .modal-content {
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
