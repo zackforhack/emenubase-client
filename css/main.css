@@ -8829,7 +8829,7 @@ em {
 /* Item List Page */
 .items-page{
   background: #fff;
-  min-height: 800px;
+  min-height: 520px;
   font-family: "Impact", Charcoal, sans-serif;
 }
 .list-panel{
