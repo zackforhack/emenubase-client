@@ -8833,6 +8833,7 @@ em {
   font-family: "Impact", Charcoal, sans-serif;
 }
 .list-panel{
+  height: 200px;
   border-bottom: 1px solid #ddd;
 }
 .list-panel .panel-body{
