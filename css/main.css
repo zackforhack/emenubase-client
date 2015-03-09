@@ -8815,7 +8815,7 @@ em {
 .about-name{
   font-family: "Impact", Charcoal, sans-serif;
   color: #000000;
-  font-size: 20px;
+  font-size: 25px;
   padding: 10px;
   background: rgba(0,0,0,0);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(74%, rgba(0,0,0,0.75)), color-stop(100%, rgba(0,0,0,0.75)));
