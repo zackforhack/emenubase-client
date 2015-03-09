@@ -1,6 +1,6 @@
-<mc-page id="hours" title="Hours">
+<mc-page id="hours" title="工作时间">
     <header>
-    	<mc-nav position="left" back="true" change-to="about">About</mc-nav>
+    	<mc-nav position="left" back="true" change-to="about">简介</mc-nav>
     </header>
     <mc-content>
     <div ng-repeat="(key,profile) in about" class="col-xs-8 col-xs-offset-2">
@@ -8,44 +8,44 @@
         <table class="table table-striped">
             <thead>
                 <tr>
-                <th>Day</th>
-                <th>From</th>
-                <th>To</th>
+                <th>工作日</th>
+                <th>从</th>
+                <th>至</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Monday</td>
+                    <td>周一</td>
                     <td>{{profile.Hours.Monday.from}}</td>
                     <td>{{profile.Hours.Monday.to}}</td>
                 </tr>
                 <tr>
-                    <td>Tuesday</td>
+                    <td>周二</td>
                     <td>{{profile.Hours.Tuesday.from}}</td>
                     <td>{{profile.Hours.Tuesday.to}}</td>
                 </tr>
                 <tr>
-                    <td>Wednesday</td>
+                    <td>周三</td>
                     <td>{{profile.Hours.Wednesday.from}}</td>
                     <td>{{profile.Hours.Wednesday.to}}</td>
                 </tr>
                 <tr>
-                    <td>Thursday</td>
+                    <td>周四</td>
                     <td>{{profile.Hours.Thursday.from}}</td>
                     <td>{{profile.Hours.Thursday.to}}</td>
                 </tr>
                 <tr>
-                    <td>Friday</td>
+                    <td>周五</td>
                     <td>{{profile.Hours.Friday.from}}</td>
                     <td>{{profile.Hours.Friday.to}}</td>
                 </tr>
                 <tr>
-                    <td>Saturday</td>
+                    <td>周六</td>
                     <td>{{profile.Hours.Saturday.from}}</td>
                     <td>{{profile.Hours.Saturday.to}}</td>
                 </tr>
                 <tr>
-                    <td>Sunday</td>
+                    <td>周日</td>
                     <td>{{profile.Hours.Sunday.from}}</td>
                     <td>{{profile.Hours.Sunday.to}}</td>
                 </tr>
