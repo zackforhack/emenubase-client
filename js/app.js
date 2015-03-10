@@ -45,7 +45,7 @@
             })
 
             .otherwise({
-                redirectTo: "/#/services"
+                redirectTo: "/services"
             });
     })
     .controller('DemoCtrl', function ($scope, $pages, $rootScope, $firebase, $location) {
