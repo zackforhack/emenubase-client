@@ -79,7 +79,7 @@
           <div class="order-input-block">您的地址: </div>
           <input class="order-input" type="text" ng-model="clientAddress">
         </div>
-        <a class="order-button-block" ng-click="order()" ng-disabled="canOrder()" ng-href="tel:{{profile.Telephone}}"><button class="btn btn-place-order">下单</button></a>
+        <div class="order-button-block"><button class="btn btn-place-order" ng-click="order()" ng-disabled="canOrder()" ng-href="tel:{{profile.Telephone}}">下单</button></div>
         <div class="order-confirm-block text-center" ng-if="myPlacedOrder">
           <div class="order-confirm-block-wait" ng-if="!myPlacedOrder.confirmed">
             请等待我们确认您的订单..
