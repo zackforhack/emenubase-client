@@ -171,7 +171,6 @@
             $scope.myTotal = 0;
             $scope.orderPlaced = true;
 
-            window.location.href = 'tel:'+ tel;
         };
         $scope.orderMore = function(){
             delete $scope.myPlacedOrder;
