@@ -1,7 +1,7 @@
     'use strict';
     angular.module('mobileCloneDemo', ['mobileClone', 'firebase', 'ngAnimate', 'snap', 'ui.bootstrap.datetimepicker'])
     .config(function ($routeProvider, $locationProvider) {
-        $locationProvider.html5Mode(true);
+        // $locationProvider.html5Mode(true);
         $routeProvider
             .when("/services", {
                 templateUrl: "partials/services.html",
