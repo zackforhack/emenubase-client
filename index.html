@@ -61,7 +61,7 @@
 <body>
   <div snap-drawer="right" class="menu menu-vertical menu-right" id="menu-s2" style="border-left: 1px solid #ddd" ng-controller="OrderCtrl">
     <h3>我的餐盘</h3>
-    <div class="order-container col-xs-12" ng-repeat="(key,profile) in about">
+    <div class="order-container col-xs-12">
         <ul>
             <li class="text-center" ng-show="!myPlate.length">目前您的餐盘是空的</li>
             <li class="order-item" ng-repeat="order in myPlate">
