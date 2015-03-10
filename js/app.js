@@ -120,6 +120,9 @@
 
     })
     .controller('OrderCtrl', function ($scope, $firebase, $rootScope, $animate){
+        var about = new Firebase('https://gforgelato.firebaseio.com/About')
+        $scope.about = $firebase(about);
+
         var orders = new Firebase('https://gforgelato.firebaseio.com/Orders');
         $scope.orders = $firebase(orders);
 
@@ -150,7 +153,7 @@
         };
 
 
-        $scope.order = function(){
+        $scope.order = function(tel){
             $scope.canSkipConfirm = false;
             var myOrder = {
                 'tel': $scope.telNum,
@@ -167,6 +170,8 @@
             $rootScope.myPlate.length = 0;
             $scope.myTotal = 0;
             $scope.orderPlaced = true;
+
+            window.location.href = 'tel:'+ tel;
         };
         $scope.orderMore = function(){
             delete $scope.myPlacedOrder;
