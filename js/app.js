@@ -153,7 +153,9 @@
         };
 
 
-        $scope.order = function(){
+        $scope.order = function(tel){
+            
+
             $scope.canSkipConfirm = false;
             var myOrder = {
                 'tel': $scope.telNum,
@@ -170,6 +172,9 @@
             $rootScope.myPlate.length = 0;
             $scope.myTotal = 0;
             $scope.orderPlaced = true;
+
+
+            window.location.href = 'tel:'+ tel;
         };
         $scope.orderMore = function(){
             delete $scope.myPlacedOrder;
