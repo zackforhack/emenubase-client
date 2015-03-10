@@ -153,7 +153,7 @@
         };
 
 
-        $scope.order = function(tel){
+        $scope.order = function(){
             $scope.canSkipConfirm = false;
             var myOrder = {
                 'tel': $scope.telNum,
