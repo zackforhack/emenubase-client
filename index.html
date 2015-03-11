@@ -82,7 +82,7 @@
         <div class="order-button-block"><button class="btn btn-place-order" ng-click="order()" ng-disabled="canOrder()">确认订单</button></div>
         <div class="order-confirm-block text-center" ng-if="myPlacedOrder">
           <div ng-repeat="(key,profile) in about"class="order-confirm-block-wait" ng-if="!myPlacedOrder.confirmed">
-            请致电<a href="tel:{{profile.telephone}}">{{profile.telephone}}</a>来确认您的订单!<br>
+            请致电<a href="tel:{{profile.Telephone}}">{{profile.Telephone}}</a>来确认您的订单!<br>
             <a href="" ng-click="$parent.orderMore()">预定更多</a>
           </div>
           <div class="order-confirm-block-done" ng-if="myPlacedOrder.confirmed">
