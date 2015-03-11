@@ -119,7 +119,7 @@
       }; 
 
     })
-    .controller('OrderCtrl', function ($scope, $firebase, $rootScope, $animate){        
+    .controller('OrderCtrl', function ($scope, $firebase, $rootScope, $animate){
         var orders = new Firebase('https://gforgelato.firebaseio.com/Orders');
         $scope.orders = $firebase(orders);
 
