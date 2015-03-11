@@ -167,8 +167,8 @@
                 var myPlacedOrder = new Firebase('https://gforgelato.firebaseio.com/Orders/'+ref.name());
                 $scope.myPlacedOrder = $firebase(myPlacedOrder);
             });
-            $rootScope.myPlate.length = 0;
-            $scope.myTotal = 0;
+            // $rootScope.myPlate.length = 0;
+            // $scope.myTotal = 0;
             $scope.orderPlaced = true;
         };
         $scope.orderMore = function(){
