@@ -124,6 +124,7 @@
         var about = new Firebase('https://gforgelato.firebaseio.com/About')
         $scope.about = $firebase(about);
         $scope.telePhone = angular.fromJson($scope.about);
+        console.log($scope.about);
         
         var orders = new Firebase('https://gforgelato.firebaseio.com/Orders');
         $scope.orders = $firebase(orders);
